@@ -1,0 +1,50 @@
+/*SELECCIONO LA BASE DE DATOS*/
+USE sifadmin;
+
+/*CREO LA TABLA*/
+CREATE TABLE `Contratos` (
+	Codigo_Contrato INT NOT NULL,
+	Numero_Contrato VARCHAR(20) NULL,
+	Nombre_Contrato VARCHAR(100) NULL,
+	Administradora VARCHAR(6) NULL,
+	Modalidad INT NULL,
+	Plan_de_Beneficios VARCHAR(30) NULL,
+	No_Usuarios INT NULL,
+	Valor_Contrato float NULL,
+	Regimen TINYINT UNSIGNED NULL,
+	Copago BINARY(50) NOT NULL,
+	Documentos VARCHAR(255) NULL,
+	Estado_Contrato BINARY(50) NOT NULL,
+	Tarifa INT NULL,
+	Manual VARCHAR(5) NULL,
+	Porcentaje INT NULL,
+	Concepto VARCHAR(255) NULL,
+	ActualizaInv BINARY(50) NOT NULL,
+	VigenciaInicial datetime NULL,
+	VigenciaFinal datetime NULL,
+	Upc float NULL,
+	Soat BINARY(50) NOT NULL,
+	ReqAutAmb TINYINT UNSIGNED NULL,
+	ReqAutUrg TINYINT UNSIGNED NULL,
+	ReqAutHos TINYINT UNSIGNED NULL,
+	ManTarMed INT NULL,
+	FacGlobal TINYINT UNSIGNED NULL,
+	CCPorRadicar VARCHAR(10) NULL,
+	CCRadicar VARCHAR(10) NULL,
+	CCGiroDirecto VARCHAR(10) NULL,
+	ManTarMat TINYINT UNSIGNED NULL,
+	Multivitaminicos TINYINT UNSIGNED NULL,
+	ConceptoPyP VARCHAR(255) NULL,
+	TipoContrato TINYINT UNSIGNED NULL,
+	ManTarTraslado TINYINT UNSIGNED NULL,
+	TarifaOxigeno TINYINT UNSIGNED NULL,
+	NivelObservacion TINYINT UNSIGNED NULL,
+	Marcar BINARY(50) NOT NULL,
+	VerDer TINYINT UNSIGNED NULL,
+	ConsAtencion INT NULL,
+	PRIMARY KEY (`Codigo_Contrato`)
+);
+
+/*HAGO MODIFICACIONES A LA TABLA*/
+
+/*SCRIPTS CORRESPONDIENTES A LA TABLA*/
