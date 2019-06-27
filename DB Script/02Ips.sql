@@ -63,7 +63,9 @@ CREATE TABLE `Ips` (
 	FechaS DATETIME NULL,
 	HoraCita TINYINT UNSIGNED NULL,
 	DianVigencia VARCHAR(10) NULL,
-	PRIMARY KEY (`Control`)
+	PRIMARY KEY (`Control`),
+	FOREIGN KEY (DepartamentoIPS) REFERENCES Departamentos(Codigo_Departamento) ,
+	FOREIGN KEY (MunicipioIPS) REFERENCES Municipios(Codigo_Completo) 
 );
 
 /*HAGO MODIFICACIONES A LA TABLA*/
