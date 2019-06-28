@@ -12,18 +12,18 @@ CREATE TABLE `Contratos` (
 	No_Usuarios INT NULL,
 	Valor_Contrato float NULL,
 	Regimen TINYINT UNSIGNED NULL,
-	Copago BINARY(50) NOT NULL,
+	Copago BINARY(1) NOT NULL,
 	Documentos VARCHAR(255) NULL,
-	Estado_Contrato BINARY(50) NOT NULL,
+	Estado_Contrato BINARY(1) NOT NULL,
 	Tarifa INT NULL,
 	Manual VARCHAR(5) NULL,
 	Porcentaje INT NULL,
 	Concepto VARCHAR(255) NULL,
-	ActualizaInv BINARY(50) NOT NULL,
+	ActualizaInv BINARY(1) NOT NULL,
 	VigenciaInicial datetime NULL,
 	VigenciaFinal datetime NULL,
 	Upc float NULL,
-	Soat BINARY(50) NOT NULL,
+	Soat BINARY(1) NOT NULL,
 	ReqAutAmb TINYINT UNSIGNED NULL,
 	ReqAutUrg TINYINT UNSIGNED NULL,
 	ReqAutHos TINYINT UNSIGNED NULL,
@@ -39,12 +39,25 @@ CREATE TABLE `Contratos` (
 	ManTarTraslado TINYINT UNSIGNED NULL,
 	TarifaOxigeno TINYINT UNSIGNED NULL,
 	NivelObservacion TINYINT UNSIGNED NULL,
-	Marcar BINARY(50) NOT NULL,
+	Marcar BINARY(1) NOT NULL,
 	VerDer TINYINT UNSIGNED NULL,
 	ConsAtencion INT NULL,
 	PRIMARY KEY (`Codigo_Contrato`)
 );
 
 /*HAGO MODIFICACIONES A LA TABLA*/
+ALTER TABLE Contratos ALTER Copago SET DEFAULT 0;
+ALTER TABLE Contratos ALTER Estado_Contrato SET DEFAULT 0;
+ALTER TABLE Contratos ALTER Porcentaje SET DEFAULT 100;
+ALTER TABLE Contratos ALTER ActualizaInv SET DEFAULT 0;
+ALTER TABLE Contratos ALTER Soat SET DEFAULT 0;
+ALTER TABLE Contratos ALTER ReqAutAmb SET DEFAULT 0;
+ALTER TABLE Contratos ALTER ReqAutUrg SET DEFAULT 0;
+ALTER TABLE Contratos ALTER ReqAutHos SET DEFAULT 0;
+ALTER TABLE Contratos ALTER FacGlobal SET DEFAULT 0;
+ALTER TABLE Contratos ALTER Multivitaminicos SET DEFAULT 0;
+ALTER TABLE Contratos ALTER Marcar SET DEFAULT 0;
+ALTER TABLE Contratos ALTER ConsAtencion SET DEFAULT 0;
+
 
 /*SCRIPTS CORRESPONDIENTES A LA TABLA*/

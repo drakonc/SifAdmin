@@ -11,7 +11,7 @@ CREATE TABLE `entidades_admninistradoras` (
 	`Departamento` VARCHAR(2) NULL DEFAULT NULL,
 	`Municipio` VARCHAR(5) NULL DEFAULT NULL,
 	`CorreoEntidd` VARCHAR(255) NULL DEFAULT NULL,
-	`Soat` BINARY(50) NOT NULL,
+	`Soat` BINARY(1) NOT NULL,
 	`Activo` TINYINT(3) UNSIGNED NOT NULL,
 	`TipoCuenta` TINYINT(3) UNSIGNED NULL DEFAULT NULL,
 	`RipsDigVer` TINYINT(3) UNSIGNED NULL DEFAULT NULL,
@@ -30,5 +30,7 @@ CREATE TABLE `entidades_admninistradoras` (
 );
 
 /*HAGO MODIFICACIONES A LA TABLA*/
-
+ALTER TABLE entidades_admninistradoras ALTER Soat SET DEFAULT 0;
+ALTER TABLE entidades_admninistradoras ALTER Activo SET DEFAULT 0;
+ALTER TABLE entidades_admninistradoras ALTER LongAutorizacion SET DEFAULT 0;
 /*SCRIPTS CORRESPONDIENTES A LA TABLA*/
