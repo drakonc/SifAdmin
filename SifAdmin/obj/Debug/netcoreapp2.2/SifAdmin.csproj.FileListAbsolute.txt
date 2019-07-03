@@ -29,3 +29,4 @@ C:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.dll
 C:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.pdb
 C:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.csproj.CopyComplete
 C:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\Razor\Areas\Departamento\Views\Departamento\index.g.cshtml.cs
+c:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_MyLayout.g.cshtml.cs
