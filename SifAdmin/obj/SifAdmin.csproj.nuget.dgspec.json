@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj": {}
+    "D:\\SifAdmin\\SifAdmin\\SifAdmin.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj": {
+    "D:\\SifAdmin\\SifAdmin\\SifAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
+        "projectUniqueName": "D:\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
         "projectName": "SifAdmin",
-        "projectPath": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
+        "projectPath": "D:\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
         "packagesPath": "C:\\Users\\jcastro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\obj\\",
+        "outputPath": "D:\\SifAdmin\\SifAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jcastro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jcastro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
