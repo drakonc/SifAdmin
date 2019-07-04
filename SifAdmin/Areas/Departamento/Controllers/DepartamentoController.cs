@@ -1,9 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using SifAdmin.Context;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using SifAdmin.Areas.Departamento.Models;
 
 namespace SifAdmin.Areas.Departamento.Controllers
@@ -11,10 +14,15 @@ namespace SifAdmin.Areas.Departamento.Controllers
     [Area("Departamento")]
     public class DepartamentoController : Controller
     {
+        private readonly DBContext _context;
+
+        public DepartamentoController(DBContext context) { _context = context; }
+
         // GET: Departamento
         public ActionResult Index()
         {
-            return View();
+            var departamentos = _context.Departamentos.ToList();
+            return View(departamentos);
         }
 
         // GET: Departamento/Details/5
