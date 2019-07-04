@@ -12941,24 +12941,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
+      "projectUniqueName": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
       "projectName": "SifAdmin",
-      "projectPath": "d:\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
+      "projectPath": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\SifAdmin.csproj",
       "packagesPath": "C:\\Users\\jcastro\\.nuget\\packages\\",
-      "outputPath": "d:\\SifAdmin\\SifAdmin\\obj\\",
+      "outputPath": "c:\\Users\\jcastro\\Desktop\\SifAdmin\\SifAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jcastro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jcastro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
