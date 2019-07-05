@@ -32,7 +32,7 @@ namespace SifAdmin.Areas.Departamento.Controllers
         }
 
         // GET: Departamento/Create
-        public ActionResult Crear()
+        public ActionResult Create()
         {
             return View();
         }
@@ -40,7 +40,7 @@ namespace SifAdmin.Areas.Departamento.Controllers
         // POST: Departamento/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Departamentos departamento)
+        public ActionResult Create(IFormCollection collection)
         {
             try
             {

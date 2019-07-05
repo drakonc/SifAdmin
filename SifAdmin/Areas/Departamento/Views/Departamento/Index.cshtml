@@ -58,24 +58,24 @@
 
 
 <!-- Departamento Modal-->
-  <div class="modal fade" id="DepartamentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content border-top-primary">
-        <div class="modal-header">
-          <h3 class="h3 text-primary">Crear Departamento</h3>
+<div class="modal fade" id="DepartamentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content border-top-primary">
+      <div class="modal-header">
+        <h3 class="h3 text-primary">Crear Departamento</h3>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
-        </div>
-        <div class="modal-body"><div id="ContenedorModal"></div></div>
       </div>
+      <div class="modal-body"><div id="ContenedorModal"></div></div>
     </div>
   </div>
+</div>
 @section Scripts{
   <script type="text/javascript">
     $(document).ready(function () {
       $(".btnCreate").click(function () {
-        $("#ContenedorModal").load("/Departamento/Departamento/Crear/", function () {
+        $("#ContenedorModal").load("/Departamento/Departamento/Create/", function () {
           $("#DepartamentoModal").modal("show")
         });
       });
