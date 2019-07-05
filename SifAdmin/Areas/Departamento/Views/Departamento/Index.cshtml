@@ -4,64 +4,81 @@
     Layout = "_MyLayout";
     ViewData["Title"] = "Departamentos";
 }
-
 <h1 class="h1 mb-2 text-primary text-center">DEPARTAMENTOS</h1>
 <br />
-<!-- DataTales -->
-<div class="card shadow mb-4 border-top-primary">
-    <div class="card-header py-3">
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <!-- DataTales -->
+    <div class="card shadow mb-4 border-top-primary">
+      <div class="card-header py-3">
         <div class="float-left text-center">
-            <h6 class="h3 m-2 font-weight-bold text-primary text-center">Listado de Departamentos</h6>
+          <h6 class="h3 m-2 font-weight-bold text-primary text-center">Listado de Departamentos</h6>
         </div>
         <div class="float-right">
-            <a href="#" class="btn btn-success btn-icon-split m-2"  data-toggle="modal" data-target="#DepartamentoModal">
-                <span class="icon text-white-50"><i class="fas fa-file"></i></span><span class="text">Nuevo Departamento</span>
-            </a>
+          <a href="#" class="btn btn-success btn-icon-split m-2 btnCreate"  data-toggle="modal" data-target="#DepartamentoModal">
+            <span class="icon text-white-50"><i class="fas fa-file"></i></span><span class="text">Nuevo Departamento</span>
+          </a>
         </div>
-    </div>
-    <div class="card-body">
+      </div>
+      <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                      <th>Codigo</th>
-                      <th>Nombre Departamento</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Codigo</th>
-                      <th>Nombre Departamento</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                     @foreach (var i in Model){
-                      <tr>
-                        <td>@i.Codigo_Departamento</td>
-                        <td>@i.Nombre_Departamento</td>
-                      </tr>
-                     }
-                  </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
-<!-- Departamento Modal-->
-  <div class="modal fade" id="DepartamentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Departamento Modal.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th width="100px" class="text-center">Codigo</th>
+                <th class="text-center">Nombre Departamento</th>
+                <th width="100px" class="text-center">Editar</th>
+                <th width="100px" class="text-center">Eliminar</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th width="100px" class="text-center">Codigo</th>
+                <th class="text-center">Nombre Departamento</th>
+                <th width="100px" class="text-center">Editar</th>
+                <th width="100px" class="text-center">Eliminar</th>
+              </tr>
+            </tfoot>
+            <tbody>
+            @foreach (var i in Model){
+              <tr>
+                <td class="text-center">@i.Codigo_Departamento</td>
+                <td>@i.Nombre_Departamento</td>
+                <td><a href="#" class="btn btn-success btn-icon-split"><span class="icon text-white-50"><i class="fas fa-trash"></i></span><span class="text">Editar</span></a></td>
+                <td><a href="#" class="btn btn-danger btn-icon-split"><span class="icon text-white-50"><i class="fas fa-trash"></i></span><span class="text">Eliminar</span></a></td>
+              </tr>
+            }
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
+<!-- Departamento Modal-->
+  <div class="modal fade" id="DepartamentoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content border-top-primary">
+        <div class="modal-header">
+          <h3 class="h3 text-primary">Crear Departamento</h3>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body"><div id="ContenedorModal"></div></div>
+      </div>
+    </div>
+  </div>
+@section Scripts{
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".btnCreate").click(function () {
+        $("#ContenedorModal").load("/Departamento/Departamento/Crear/", function () {
+          $("#DepartamentoModal").modal("show")
+        });
+      });
+    });
+ </script>
+}

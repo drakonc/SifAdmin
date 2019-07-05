@@ -62,3 +62,4 @@ d:\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.Views.pdb
 d:\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.dll
 d:\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.pdb
 d:\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\SifAdmin.csproj.CopyComplete
+c:\Users\jcastro\Desktop\SifAdmin\SifAdmin\obj\Debug\netcoreapp2.2\Razor\Areas\Departamento\Views\Departamento\Crear.g.cshtml.cs
